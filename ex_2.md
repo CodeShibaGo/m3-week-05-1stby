@@ -7,7 +7,8 @@
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+    SELECT   *  FROM members
+    JOIN committees on (members.name = committees.name);    
 ```
 
 Output
@@ -30,7 +31,8 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+    SELECT   *  FROM members
+    LEFT JOIN committees on (members.name = committees.name);
 ```
 
 Output
@@ -55,7 +57,9 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+    SELECT   *  FROM members
+    LEFT JOIN committees on (members.name = committees.name)
+    WHERE committees.name IS NULL;
 ```
 
 Output
@@ -77,7 +81,8 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+    SELECT   *  FROM members
+    RIGHT JOIN committees on (members.name = committees.name)
 ```
 
 Output
@@ -101,7 +106,9 @@ Output
 Answer
 
 ```sql
-/* SOME SQL STATEMENT  */
+    SELECT   *  FROM members
+    RIGHT JOIN committees on (members.name = committees.name)
+    WHERE member_id IS NULL;
 ```
 
 Output
