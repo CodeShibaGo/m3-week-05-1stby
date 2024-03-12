@@ -9,7 +9,7 @@ Answer
 
 ```sql
     SELECT lastname,firstname,jobtitle FROM employees
-    WHERE jobtitle = 'Sales Rep'
+    WHERE jobtitle = 'Sales Rep';
 ```
 
 Output

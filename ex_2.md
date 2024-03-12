@@ -59,7 +59,7 @@ Answer
 ```sql
     SELECT   *  FROM members
     LEFT JOIN committees on (members.name = committees.name)
-    WHERE committees.name IS NULL;
+    WHERE committees.name IS NULL
 ```
 
 Output
@@ -82,7 +82,7 @@ Answer
 
 ```sql
     SELECT   *  FROM members
-    RIGHT JOIN committees on (members.name = committees.name)
+    RIGHT JOIN committees on (members.name = committees.name);
 ```
 
 Output
